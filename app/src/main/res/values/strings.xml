@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Zerojet</string>
+    <string name="red">one</string>
+    <string name="blue">two</string>
+    <string name="orange">three</string>
+    <string name="yellow">four</string>
+    <string name="green">five</string>
+    <string name="black">six</string>
+    <string name="white">seven</string>
+    <string name="categoryHome">Home</string>
+    <string name="categoryEvents">Add events</string>
+    <string name="categoryFood">Add meals</string>
+    <string name="categoryActivities">Add activities</string>
+    <string name="categoryAccomodation">Accommodation</string>
+    <string name="categoryCarRental">Car Rental</string>
+    <string name="categoryFlights">Free Flights</string>
+    <string name="categoryAccountAndSettings">Account and Settings</string>
+    <string name="facebook_app_id">141347813117158</string>
+    <string name="fb_login_protocol_scheme">fb141347813117158</string>
+</resources>

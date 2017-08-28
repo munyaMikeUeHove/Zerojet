@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:coverflow="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0000bf">
+
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textSize="23sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:layout_weight="1"
+            android:elevation="12dp"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="1.0"
+            app:cardCornerRadius="10dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/homeImageTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY" />
+
+
+                <View
+                    android:id="@+id/opacityFilter1"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_alignParentBottom="true"
+                    android:alpha="0.6"
+                    android:background="@android:color/black"></View>
+
+                <TextView
+                    android:id="@+id/homeCategoryTextView"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/opacityFilter1"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="11dp"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="35dp"
+            android:layout_marginEnd="20dp"
+            android:elevation="12dp"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="1.0"
+            app:cardCornerRadius="10dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FF0800"
+                android:text="Open"
+                android:onClick="openActivity"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                />
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="4dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/bottomTintForCategoryTitle"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#cdcdcf"
+                tools:layout_editor_absoluteY="542dp"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow
+                android:id="@+id/bottomNavigationCategoryFlow"
+                android:layout_width="368dp"
+                android:layout_height="100dp"
+                app:reflectionOpacity="1"
+                coverflow:coverHeight="60dp"
+                coverflow:coverWidth="100dp"
+                coverflow:maxScaleFactor="1.5"
+                coverflow:rotationThreshold="0.2"
+                coverflow:scalingThreshold="0.1"
+                coverflow:spacing="0.4"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="623dp" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
+
